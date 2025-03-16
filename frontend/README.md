@@ -1,31 +1,8 @@
-# E-Book Store Project
+# React + Vite
 
-This is a full-stack E-book Store project.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Features
-- **User Features**:
-  - Browse books.
-  - Add books to the cart.
-  - Add books to the favorites for later viewing.
-  - User registration and login.
-  
-- **Admin Features**:
-  - Admin can add new books to the store.
-  - Admin can edit details of existing books.
-  - Admin can delete books from the store.
+Currently, two official plugins are available:
 
-## Tech Stack
-- **Frontend**: React.js, TailwindCSS
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB
-- **Authentication**: JWT (JSON Web Tokens)
-
-## Installation
-
-### Clone the Repository
-
-Clone the repository to your local machine:
-
-```bash
-git clone https://github.com/Rasha-Syed/E-Book-MERN.git
-cd E-Book-MERN
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
