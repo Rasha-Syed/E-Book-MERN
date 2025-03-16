@@ -77,7 +77,7 @@ router.post("/sign-in",async(req,res)=> {
 
 
 //get user information
-router.get("/get-user",authenticateToken,async(req,res)=>{
+/*router.get("/get-user",authenticateToken,async(req,res)=>{
     try{
         const {id}=req.headers;
         const data=await User.findById(id).select('-password');
@@ -86,7 +86,20 @@ router.get("/get-user",authenticateToken,async(req,res)=>{
     {
         res.status(500).json({message: "Internal server error"});
     }
+});*/
+// get user information
+// user.js
+router.get("/get-user", authenticateToken, async (req, res) => {
+    try {
+        const { id } = req.headers;
+        const userData = await User.findById(id).select('username email role avatar'); // Include role here
+        return res.status(200).json(userData);  // This will include the role in the response
+    } catch (error) {
+        res.status(500).json({ message: "Internal server error" });
+    }
 });
+
+
 
 
 //update address
