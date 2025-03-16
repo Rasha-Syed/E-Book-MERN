@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from "react";
-import Sidebar from "../components/Profile/Sidebar";
+import Sidebar from "../components/Profile/SideBar";
 import { Outlet } from "react-router-dom";
 import { useSelector } from "react-redux";
 import Loader from "../components/Loader/Loader";
