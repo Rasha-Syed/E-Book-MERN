@@ -10,9 +10,9 @@ This is a full-stack E-book Store project.
   - User registration and login.
   
 - **Admin Features**:
-  - Admins can add new books to the store.
-  - Admins can edit details of existing books.
-  - Admins can delete books from the store.
+  - Admin can add new books to the store.
+  - Admin can edit details of existing books.
+  - Admin can delete books from the store.
 
 ## Tech Stack
 - **Frontend**: React.js, TailwindCSS
@@ -29,18 +29,3 @@ Clone the repository to your local machine:
 ```bash
 git clone https://github.com/Rasha-Syed/E-Book-MERN.git
 cd E-Book-MERN
-
-### Install Dependencies
-
-```bash
-npm install
-
-### To run Frontend
-
-```bash
-npm run dev
-
-### To run Backend
-
-```bash
-nodemon index.js
