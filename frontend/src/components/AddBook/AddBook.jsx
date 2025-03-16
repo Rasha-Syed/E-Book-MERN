@@ -24,7 +24,7 @@ const AddBook = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:1000/api/v1/add-book", formData, { headers });
+      const response = await axios.post("https://e-book-mern.onrender.com/api/v1/add-book", formData, { headers });
       alert(response.data.message);
       setFormData({ url: "", title: "", author: "", price: "", desc: "", language: "" });
     } catch (error) {
