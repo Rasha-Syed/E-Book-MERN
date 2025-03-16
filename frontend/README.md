@@ -22,7 +22,7 @@ This is a full-stack E-book Store project.
 
 ## Installation
 
-### 1. Clone the Repository
+### Clone the Repository
 
 Clone the repository to your local machine:
 
@@ -30,10 +30,17 @@ Clone the repository to your local machine:
 git clone https://github.com/Rasha-Syed/E-Book-MERN.git
 cd E-Book-MERN
 
+### Install Dependencies
+
+```bash
+npm install
+
 ### To run Frontend
 
+```bash
 npm run dev
 
 ### To run Backend
 
+```bash
 nodemon index.js
