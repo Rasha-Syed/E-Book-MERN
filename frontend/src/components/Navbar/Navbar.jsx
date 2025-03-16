@@ -12,7 +12,11 @@ const Navbar = () => {
   ];
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
   const role = useSelector((state) => state.auth.role); // Check user's role
-  
+
+  // Remove Cart link if the role is 'admin'
+  if (role === "admin") {
+    links.splice(2, 1); 
+  }
   if (isLoggedIn === false) {
     links.splice(2, 2);
   }
